@@ -22,7 +22,7 @@ def translate(text, src_lang):
 
 
 #Ignorer les erreurs de surveillance
-st.set_option("logger.level", "error")
+#st.set_option("logger.level", "error")
 
 # Interface Streamlit
 st.set_page_config(page_title="Traducteur Bilingue 🇬🇧↔🇫🇷", layout="centered")
