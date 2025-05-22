@@ -20,6 +20,10 @@ def translate(text, src_lang):
     translation = model.generate(**tokens)
     return tokenizer.decode(translation[0], skip_special_tokens=True)
 
+
+#Ignorer les erreurs de surveillance
+st.set_option("logger.level", "error")
+
 # Interface Streamlit
 st.set_page_config(page_title="Traducteur Bilingue 🇬🇧↔🇫🇷", layout="centered")
 st.title("📘 Traducteur Bilingue")
